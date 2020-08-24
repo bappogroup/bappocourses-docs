@@ -1,10 +1,8 @@
 # Learning React for Bappo
 
-## Learning React for Bappo
-
 Below you find a list of resources that should help you gain enough knowledge about Javascript, React and React-Native for the purpose of coding in the Bappo platform. We suggest that you start at the top and work your way down, or simply use it as a reference if you prefer.
 
-### Javascript knowledge
+## Javascript knowledge
 
 Before learning react you should know Javascript well. You need 3+ months experience in Javascript, or alternatively 500+ hours over a longer period.
 
@@ -12,7 +10,7 @@ Before learning react you should know Javascript well. You need 3+ months experi
 
 So what if you don't know Javascript well yet. There are plenty of Javascript courses online. We recommend The Basic Javascript and ES6 courses on the [Freecodecamp](https://www.freecodecamp.org/learn) website. You'll find these two courses under the heading of "Javascript Algorithms and Data Structures"
 
-### More Javascript resources
+## More Javascript resources
 
 | Topic | Resources |
 | :--- | :--- |
@@ -25,7 +23,7 @@ So what if you don't know Javascript well yet. There are plenty of Javascript co
 
 If you can work your way through the above resources that will put you in a great starting position for React.
 
-### Learning React
+## Learning React
 
 | Topic | Getting Started | Advanced |
 | :--- | :--- | :--- |
@@ -46,7 +44,7 @@ If you can work your way through the above resources that will put you in a grea
 | Class Components vs Hooks | [Learning Class Component vs Learning Hooks](https://vimeo.com/445472770/ace64e31ec) |  |
 | Class Components | Refer to "The Concepts" above | [React.Component reference](https://reactjs.org/docs/react-component.html) |
 
-### Learning Hooks
+## Learning Hooks
 
 | Topic | Getting Started | Advanced |
 | :--- | :--- | :--- |
@@ -56,7 +54,7 @@ If you can work your way through the above resources that will put you in a grea
 | The basic hooks | [useState](https://www.youtube.com/watch?v=9xhKH43llhU) |  |
 |  | [useEffect](https://www.youtube.com/watch?v=j1ZRyw7OtZs) | [Complete guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/) |
 
-### Advanced React
+## Advanced React
 
 | Topic | Getting Started | Advanced |
 | :--- | :--- | :--- |
