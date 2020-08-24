@@ -30,7 +30,6 @@ If you can work your way through the above resources that will put you in a grea
 | Topic | Getting Started | Advanced |
 | :--- | :--- | :--- |
 | What you don't need | [What you dont need to learn](https://vimeo.com/445431272/99599f7a74) |  |
-| Concepts | [React Main Concepts](https://reactjs.org/docs/hello-world.html) |  |
 | First Tutorial | [Official React Tutorial](https://reactjs.org/tutorial/tutorial.html) | [What is JSX?](https://reactjs.org/docs/jsx-in-depth.html) |
 | The Concepts \(1 - 12\) | [Concept 1](https://reactjs.org/docs/hello-world.html), [Concept 2](https://reactjs.org/docs/introducing-jsx.html) ... 10 more concepts, right hand menu |  |
 | How React works | [React under the hood](https://www.freecodecamp.org/news/react-under-the-hood/) |  |
