@@ -6,6 +6,5 @@
 
 ---
 
-* [Learning React for Bappo](learn-react-for-bappo/README.md)
-  * [Untitled](learn-react-for-bappo/untitled.md)
+* [Learning React for Bappo](learn-react-for-bappo.md)
 
