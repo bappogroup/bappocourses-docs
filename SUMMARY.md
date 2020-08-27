@@ -7,4 +7,5 @@
 ---
 
 * [Learning React for Bappo](learn-react-for-bappo.md)
+* [Forms in Bappo Coding](forms-in-bappo-coding.md)
 
