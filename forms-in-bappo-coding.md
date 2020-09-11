@@ -211,8 +211,10 @@ export default () => {
   return (
     <View style={{ padding: 50 }}>
       <Form>
-        {({ getFieldValue }) => {
+        {{getFieldValue} => {
           const flagValue = getFieldValue("flag");
+          actions.changeValue('flag', true);
+          
           return (
             <>
               <Form.Field
@@ -312,4 +314,27 @@ export default () => {
 ```
 
 In the example above the DatabaseField component renders the customer field on the Invoice Object.
+
+## Methods in functional body
+
+Apart from `getFieldValue` , you also have a bunch of other useful methods provided from the function param. An example is `actions.changeValue` . 
+
+```text
+{(params) => {
+  console.log(params); // see a full list of available methods
+  
+  const { getFieldValue, actions } = params;
+  
+  // this programmatically changes the value of a field
+  actions.changeValue(fieldName, newValue); 
+  
+  return (
+    <>
+      // form fields..
+    </>
+  );
+}}
+```
+
+
 

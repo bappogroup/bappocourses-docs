@@ -7,5 +7,6 @@
 ---
 
 * [Learning React for Bappo](learn-react-for-bappo.md)
+* [DB Query Api in Bappo Coding](query-api.md)
 * [Forms in Bappo Coding](forms-in-bappo-coding.md)
 
