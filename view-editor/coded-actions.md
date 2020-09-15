@@ -16,23 +16,41 @@ You get `index.js` where you can code your function as action inside the `create
 
 #### 2. Code the action in `index.js`
 
-Use the auto-generated template and code your component in the `createFunction` method. Here we just logs the `objectKey` and `item` the action received when executed:  
+Use the auto-generated template and code your component in the `createFunction` method. Here we take `objectKey` from options and `item` from props the action received when executed, and create a record, using GraphQL:
 
 ```text
+import { gql } from "@bappo/sdk";
+
+const MUTATION = gql`
+  mutation createCustomer($name: String!) {
+    createCustomer(input: { name: $name }) {
+      id
+      name
+    }
+  }
+`;
+
 const codedFunction = {
   createFunction: (context, options) => {
+    const { mutate, appEnv } = context;
     const { objectKey } = options;
+    const objInfo = appEnv.objInfoMap[options.objectKey];
 
     return async function codedAction(props) {
       const { item } = props;
+      const { data } = await mutate(MUTATION, {
+        variables: {
+          name: item.name
+        }
+      });
 
-      console.log('object key:', objectKey);
-      console.log('item', item)
+      return data.createCustomer;
     };
-  },
+  }
 };
 
 export default codedFunction;
+
 ```
 
 #### 3. Configure the action's `options` and `parameters`
@@ -50,7 +68,7 @@ In this example we declare the action needs an option `objectKey` and a paramete
 
 ```text
 {
-  "label": "Log Record",
+  "label": "Create Record",
   "optionTypes": {
     "objectKey": {
       "type": "BAPPO_OBJECT",
@@ -108,5 +126,5 @@ Go to View Editor and create an Action Flow. Your coded action should appear in 
 
 Options and props you declared in `config.json` should appear in the right-side panel and ready for you to configure. Select an object and specify some field values as the `item`.
 
-Preview the view, execute the action flow, then `objectKey` and field values you specified should appear in console log.
+Preview the view, execute the action flow, then a new Customer record will be created using`objectKey` and field values you specified.
 
