@@ -176,6 +176,8 @@ In this example we declare the component needs a prop `onPress` and the kind is 
 
 ```
 
+For more information about configs, see  [Types in Coded Component/Actions's Config](https://bappo.gitbook.io/bappo-courses/view-editor/types-in-coded-component-actions-config).
+
 Save and sync the package.
 
 #### 4. Use the component in View Editor

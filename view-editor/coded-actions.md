@@ -96,7 +96,7 @@ In this example we declare the action needs an option `objectKey` and a paramete
 
 ```
 
-For more information about configs, see  Types in Coded Component/Actions's Config.
+For more information about configs, see  [Types in Coded Component/Actions's Config](https://bappo.gitbook.io/bappo-courses/view-editor/types-in-coded-component-actions-config).
 
 Save and sync the package.
 
