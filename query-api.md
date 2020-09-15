@@ -2,7 +2,7 @@
 description: This article shows you how to interact with the backend in Bappo coding.
 ---
 
-# DB Query Api in Bappo Coding
+# DB Query API in Bappo Coding
 
 There are two ways to send requests to the backend: RPC based and GraphQL based.
 
