@@ -96,6 +96,8 @@ In this example we declare the action needs an option `objectKey` and a paramete
 
 ```
 
+For more information about configs, see  Types in Coded Component/Actions's Config.
+
 Save and sync the package.
 
 #### 4. Use the action in Action Flow, View Editor
