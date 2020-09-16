@@ -16,38 +16,60 @@ You get `index.js` where you can code your function as action inside the `create
 
 #### 2. Code the action in `index.js`
 
-Use the auto-generated template and code your component in the `createFunction` method. Here we take `objectKey` from options and `item` from props the action received when executed, and create a record, using GraphQL:
+Use the auto-generated template and code your component in the `createFunction` method. Here we take `objectKey` from options and `item` from props the action received when executed, and create a record.
+
+There are two ways to create the record - you can either use `models`, or use our modern GraphQL api:
 
 ```text
-import { gql } from "@bappo/sdk";
-
-const MUTATION = gql`
-  mutation createCustomer($name: String!) {
-    createCustomer(input: { name: $name }) {
-      id
-      name
-    }
-  }
-`;
+/**
+ * 1. Create Record with $models
+ */
 
 const codedFunction = {
   createFunction: (context, options) => {
-    const { mutate, appEnv } = context;
+    const { models } = context;
     const { objectKey } = options;
-    const objInfo = appEnv.objInfoMap[options.objectKey];
 
     return async function codedAction(props) {
       const { item } = props;
-      const { data } = await mutate(MUTATION, {
-        variables: {
-          name: item.name
-        }
-      });
-
-      return data.createCustomer;
+      models[objectKey].create(item);
     };
-  }
+  },
 };
+
+/**
+ * 2. Create Record with GraphQL
+ */
+
+// import { gql } from '@bappo/sdk';
+
+// const MUTATION = gql`
+//   mutation createCustomer($name: String!) {
+//     createCustomer(input: { name: $name }) {
+//       id
+//       name
+//     }
+//   }
+// `;
+
+// const codedFunction = {
+//   createFunction: (context, options) => {
+//     const { mutate, appEnv } = context;
+//     const { objectKey } = options;
+//     const objInfo = appEnv.objInfoMap[options.objectKey];
+
+//     return async function codedAction(props) {
+//       const { item } = props;
+//       const { data } = await mutate(MUTATION, {
+//         variables: {
+//           name: item.name,
+//         },
+//       });
+
+//       return data.createCustomer;
+//     };
+//   },
+// };
 
 export default codedFunction;
 
@@ -64,7 +86,7 @@ Difference between options and parameters:
 
 `optionTypes` is the type definition of the option and `defaultOptionConfigs` gives the option a default value. Similarly, `parameters` defines the props the component can receive and `defaultArgumentConfigs` gives the param a default value when executed in the Action Flow.
 
-In this example we declare the action needs an option `objectKey` and a parameter `item`. The `config.json` now becomes:
+In this example, we declare the action needs an option `objectKey` and a parameter `item`. The `config.json` now becomes:
 
 ```text
 {
