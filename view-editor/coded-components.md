@@ -145,20 +145,7 @@ In this example we declare the component needs a prop `onPress` and the kind is 
     "onPress": {
       "type": {
         "kind": "CALLBACK_FUNCTION",
-        "parameters": {
-          "item": {
-            "key": "item",
-            "label": "Item",
-            "description": "The item that will be logged.",
-            "type": {
-              "kind": "RECORD",
-              "objectKey": {
-                "referenceKind": "OptionReference",
-                "optionName": "objectKey"
-              }
-            }
-          }
-        }
+        "parameters": {}
       },
       "label": "Click Action Flow",
       "canBeDeviceSpecific": false,
