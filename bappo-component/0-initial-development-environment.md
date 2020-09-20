@@ -1,4 +1,4 @@
-# 0 Initial development environment
+# Initial development environment
 
 ## 1. Install software and solve dependences 
 
@@ -103,7 +103,7 @@ After Webpack Building, the storybook will be loaded and you can check all the e
 
 ![](../.gitbook/assets/image%20%285%29.png)
 
-**Storybook-web** is for displaying Bappo-components and Functional test. Details can be seen in [Step3. Develop Components and Test](https://github.com/bappogroup/bappo-open/wiki/Step3.-Develop-Components-and-Test)
+**Storybook-web** is for displaying Bappo-components and Functional test. Details can be seen in [Develop components and Test them](https://app.gitbook.com/@bappo/s/bappo-courses/~/drafts/-MHf-sMHBmirv38PH0cT/bappo-component/develop-components-and-test-them)
 
 ## 6. Run Storybook-native on a IOS/Android simulator
 
@@ -113,7 +113,7 @@ After Webpack Building, the storybook will be loaded and you can check all the e
 
 Go to Xcode =&gt; Preference =&gt; Account, and click follow the order showing in this picture
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
 After that make sure you are in the Bappo Team like this
 
@@ -133,11 +133,11 @@ pod install
 
 If every thing goes right, you will see the output like this
 
-![](../.gitbook/assets/image%20%289%29.png)
+![](../.gitbook/assets/image%20%2816%29.png)
 
 > If you are curious about what `pod install` do, check this article to have a deep understanding - [What does pod install do](https://medium.com/@scottlydon18/podspecs-podfile-pod-install-what-happens-518af7e6471d#:~:text=The%20program%20pod%20goes%20to%20the%20source%20listed%20at%20the,.com%2FCocoaPods%2FSpecs.&text=and%20if%20there%20are%20different,it%20can't%20find%20it.)
 
-
+### 6.3 Start storybook-native
 
 * Start the Metro Bundler. Go to the storybook-native folder
 
@@ -157,7 +157,7 @@ npx react-native start --projectRoot storybook
 
 Go to next step until you see the following prompt
 
-![Metro Bundler started](../.gitbook/assets/image%20%2810%29.png)
+![Metro Bundler started](../.gitbook/assets/image%20%2817%29.png)
 
 * Run the Storybook-native on Android simulator. 
 
@@ -172,7 +172,7 @@ npx react-native run-ios
 
 **Notice:** If this is the first time you run it, it will take a few more minutes to install. Just take a cup of coffee. It depends on your CPU, memory. Then you will see the storybook on mobile.
 
-![Storybook-native on IOS](../.gitbook/assets/image%20%287%29.png)
+![Storybook-native on IOS](../.gitbook/assets/image%20%2812%29.png)
 
 ## 7. Run Storybook-native on an Android simulator
 
@@ -196,7 +196,7 @@ npx react-native start --projectRoot storybook
 
 Go to next step until you see the following prompt
 
-![Metro Bundler started](../.gitbook/assets/image%20%2810%29.png)
+![Metro Bundler started](../.gitbook/assets/image%20%2817%29.png)
 
 * Run the Storybook-native on Android simulator. 
 
