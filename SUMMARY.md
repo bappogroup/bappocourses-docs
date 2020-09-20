@@ -6,6 +6,8 @@
 
 ---
 
+* [Bappo Component](bappo-component/README.md)
+  * [0 Initial development environment](bappo-component/0-initial-development-environment.md)
 * [Learning React for Bappo](learn-react-for-bappo.md)
 * [DB Query API in Bappo Coding](query-api.md)
 * [Forms in Bappo Coding](forms-in-bappo-coding.md)
