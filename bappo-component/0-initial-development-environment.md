@@ -2,7 +2,7 @@
 
 ## 1. Install software and solve dependences 
 
-please this article to initialize your development environment
+please read this article to initialize your development environment
 
 > [https://app.gitbook.com/@bappo/s/bappo-platform-team/new-staff-training/working-environment-setup/macbook-setups-for-developing](https://app.gitbook.com/@bappo/s/bappo-platform-team/new-staff-training/working-environment-setup/macbook-setups-for-developing)
 
