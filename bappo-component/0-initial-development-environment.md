@@ -103,7 +103,7 @@ After Webpack Building, the storybook will be loaded and you can check all the e
 
 ![](../.gitbook/assets/image%20%285%29.png)
 
-**Storybook-web** is for displaying Bappo-components and Functional test. Details can be seen in [Develop components and Test them](https://app.gitbook.com/@bappo/s/bappo-courses/~/drafts/-MHf-sMHBmirv38PH0cT/bappo-component/develop-components-and-test-them)
+**Storybook-web** is for displaying Bappo-components and Functional test. Details can be seen in [Develop components and Test them](develop-components-and-test-them.md)
 
 ## 6. Run Storybook-native on a IOS/Android simulator
 
