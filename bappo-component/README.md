@@ -22,7 +22,14 @@ The wrong naming could be :  `0.1.1-alpha.169`,    `0.1.0.170`,  `0.2.0-alpha.16
 
 ## Step4. Publish to NPM
 
-Go to Bappo-component folder and publish it
+
+
+```bash
+cd ./bappo-open/packages/bappo-components
+
+#Make sure you are in the right folder before publish
+npm publish
+```
 
 ```bash
 cd ./bappo-open/packages/bappo-components

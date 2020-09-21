@@ -118,9 +118,12 @@ Repeat the steps in 4.2 but use `npx react-native android` to start android simu
 
 ## 5. Publish 
 
+```bash
+cd ./bappo-open/packages/bappo-components
 
-
-```text
+#Make sure you are in the right folder before publish
 npm publish
 ```
+
+
 
