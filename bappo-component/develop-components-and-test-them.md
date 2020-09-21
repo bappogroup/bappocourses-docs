@@ -106,11 +106,21 @@ npx react-native ios
 
 ![Iconbutton on story-book native](../.gitbook/assets/image%20%288%29.png)
 
-If there some code not compatible with mobile platform you may seen error like this.
+If there some code not compatible with mobile platform you may see error like this.
 
 ![Error when code is not compatable with native](../.gitbook/assets/image%20%289%29.png)
 
 ### 4.3 Test the performance on Andorid
 
 Repeat the steps in 4.2 but use `npx react-native android` to start android simulator
+
+
+
+## 5. Publish 
+
+
+
+```text
+npm publish
+```
 
