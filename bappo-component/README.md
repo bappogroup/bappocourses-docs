@@ -2,17 +2,18 @@
 
 Please use this workflow when you make contributions to Bappo-Component 
 
-## Step1. Came up with an issue on ithub and discuss it
+## Step1. Came up with an issue on Github and discuss it
 
 Write an issue [on this page](https://github.com/bappogroup/bappo-open/issues), in which please figure out what kind of bug you found, or what kind of feature for a user story.
 
-Once you have done that. Reach out to discuss it =&gt; find a way to achieve that
+Once you have done that. Reach out Platform team to discuss it. The reason we are doing that, is because we always want to have a beautiful and thorough solution to meet new feature. So discuss could you a lot of time on refactoring your code\(Hope this would never happen\). 
 
 ## Step2. Create a feature branch on your local machine
 
-develop
+* Create local branch on your machine and then start developing, workflow could see this [page](develop-components-and-test-them.md#1-start-developing)
+* After coding please test your component to see if that works well, follow [this](develop-components-and-test-them.md#4-1-test-the-performance-on-web-browser) to start your storybook
 
-test
+
 
 ## Step3. Publish Pull Request\(pr\) after developing
 

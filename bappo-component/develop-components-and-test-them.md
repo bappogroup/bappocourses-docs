@@ -60,6 +60,12 @@ In each `example.js` file you can write the features of your new component. The 
 
 ![code snippet example ](../.gitbook/assets/image%20%2810%29.png)
 
+**3. Register your story**
+
+If the story page is a new one, you need to register them in `index.js` under `bappo-open/packages/bappo-components/storybook/storybook-native/storybook/stories`  as show in the picture
+
+![](../.gitbook/assets/image%20%2819%29.png)
+
 ## 4. Start storybook and Test your components
 
 ### 4.1 Test the performance on web-browser
