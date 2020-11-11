@@ -20,3 +20,7 @@
 * [Types in Coded Component/Action's Config](view-editor/types-in-coded-component-actions-config.md)
 * [React context](view-editor/react-context.md)
 
+## Misc
+
+* [Set Up Minizone \(as a remote developer\)](misc/set-up-minizone-as-a-remote-developer.md)
+
