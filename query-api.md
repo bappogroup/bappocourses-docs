@@ -98,7 +98,7 @@ export default function Hello() {
 }
 
 // const CREATE_CUSTOMER = gql`
-//   mutation createInvoice($name: String!) {
+//   mutation createCustomer($name: String!) {
 //     createCustomer(input: { name: $name }) {
 //       id
 //       name
@@ -106,23 +106,59 @@ export default function Hello() {
 //   }
 // `;
 
-// export default function Hello() {
-//   const [createCustomer, result] = useMutation(CREATE_CUSTOMER);
+// export default function Hello({ $models }) {
+//   const { loading, error, data } = useQuery(FIND_CUSTOMERS);
+//   const [createCustomer] = useMutation(CREATE_CUSTOMER, {
+//     update(cache, { data: { createCustomer } }) {
+//       // Update the cache after the mutation
+//       cache.modify({
+//         fields: {
+//           Customer_all(existingCustomers = []) {
+//             const newCustomerRef = cache.writeFragment({
+//               data: createCustomer,
+//               fragment: gql`
+//                 fragment NewCustomer on Customer {
+//                   id
+//                   name
+//                 }
+//               `,
+//             });
+//             return [...existingCustomers, newCustomerRef];
+//           },
+//         },
+//       });
+//     },
+//   });
 
-//   console.log(result);
+//   if (loading) return null;
+
+//   const { Customer_all } = data;
 
 //   return (
-//     <button
-//       onClick={() => {
-//         createCustomer({
-//           variables: {
-//             name: "Test Customer"
-//           }
-//         });
-//       }}
-//     >
-//       Create Customer
-//     </button>
+//     <div>
+//       <button
+//         onClick={() => {
+//           createCustomer({
+//             variables: {
+//               name: `Test Customer ${Customer_all.length + 1}`,
+//             },
+//           });
+//         }}
+//       >
+//         New Customer
+//       </button>
+//       <button
+//         onClick={() => {
+//           $models.Customer.destroy({ where: {} });
+//         }}
+//       >
+//         Delete all
+//       </button>
+//       <div>List:</div>
+//       {Customer_all.map((cus) => (
+//         <div key={cus.id}>{cus.name}</div>
+//       ))}
+//     </div>
 //   );
 // }
 
