@@ -20,7 +20,15 @@ You can boot up the entire Bappo on your local machine for easier development, w
 
 ![Keychain Access 3](../.gitbook/assets/image%20%2821%29.png)
 
-   8. You're done!
+   8. You're done!  
+Run `docker ps` and you should see these containers up and running:  
+
+
+![List of container names](../.gitbook/assets/image%20%2825%29.png)
+
+### Troubleshooting
+
+1. **Some container is not up** Check Logs from docker. Known reasons include not allocating enough cpu, memory or disk space to docker. 
 
 
 
