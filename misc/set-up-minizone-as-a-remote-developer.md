@@ -8,8 +8,19 @@ You can boot up the entire Bappo on your local machine for easier development, w
 2. You'll be provided with a `credentials` file. Put it under **`~/.aws/credentials`** \(Linux & Mac\) or **`%USERPROFILE%\.aws\credentials`** \(Windows\).
 3. Install dependencies by running `yarn install` under `bappo-web`, `bappo-api` and the root folder
 4. Go to `minizone` and run `./launch-ci.sh`
+5. Open Keychain Access on Mac. Select login and All Items on the left. Then drag file `minizone/nginx/conf.d/cert.pem` into the right-hand side.
 
+![Keychain Access 1](../.gitbook/assets/image%20%2822%29.png)
 
+   6. You should see an item added to the list. Right click it and select "Get Info".
+
+![Keychain Access 2](../.gitbook/assets/image%20%2823%29.png)
+
+   7. Expand "Trust" and select "Always Trust" in the dropdown next to "When using this certificate". Then close the popup. The system will ask for your password to save this change.
+
+![Keychain Access 3](../.gitbook/assets/image%20%2821%29.png)
+
+   8. You're done!
 
 
 
