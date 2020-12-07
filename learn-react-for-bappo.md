@@ -16,6 +16,7 @@ So what if you don't know Javascript well yet. There are plenty of Javascript co
 | :--- | :--- |
 | ES6 | [ES6 for React, 1 hour video](https://www.youtube.com/watch?v=NCwa_xi0Uuc&t=109s) |
 |  | [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) |
+|  | [Arrow Functions](https://medium.com/@ExplosionPills/arrow-functions-as-simple-as-i-can-make-them-79d975a7883a) |
 | Promises | [Promises in 10 minutes](https://www.youtube.com/watch?v=DHvZLI7Db8E) |
 |  | [async await](https://youtu.be/V_Kr9OSfDeU) |
 |  | [What is a promise?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261) |
