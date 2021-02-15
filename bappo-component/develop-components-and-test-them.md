@@ -120,9 +120,25 @@ If there some code not compatible with mobile platform you may see error like th
 
 Repeat the steps in 4.2 but use `npx react-native android` to start android simulator
 
+## 5. Commit changes and create a pull request
 
+Once you have finished your code, commit it  in your branch and create a pull request 
 
-## 5. Publish 
+## 6. Publish 
+
+People who review the code need to publish the new version of the bappo component, please follow these steps .
+
+### 6.1 Modify bappo-component Version and commit in master branch
+
+Changes the version of Bappo-component in package.json, and make the commit message as same as the version number
+
+![](../.gitbook/assets/image%20%2829%29.png)
+
+**You don't need to push this change to master branch on github, this will be done automatically in step 6.2**
+
+### 6.2 Publish it in npm
+
+use the following command to publish 
 
 ```bash
 cd ./bappo-open/packages/bappo-components
@@ -131,28 +147,37 @@ cd ./bappo-open/packages/bappo-components
 npm publish
 ```
 
-## 5. Commit Version update
+Once you finish, the successful log should like this
 
-Modify bappo-component Version
+> There are prepublish and postpublish hook setted to do several tasks, including storybook deploy etc.
+>
+> If you have interests in that have a look in package.json
+>
+> "prepublish": "npm run build",
+>
+>  "postpublish": "npm run release-storybook",
 
-![](../.gitbook/assets/image%20%2826%29.png)
+![successful log](../.gitbook/assets/image%20%2828%29.png)
 
-
-
-Publish new bappo-component 
-
-```bash
-cd ./bappo-open/packages/bappo-components
-
-#Make sure you are in the right folder before publish
-npm publish
-```
-
-Modify bappo-component Version in story book and yarn install
+There are errors you may  meet during publish
 
 ![](../.gitbook/assets/image%20%2827%29.png)
 
-Commit changes in Step5 with name \`Storybook deploy\`
+To fix that, one solution would be make sure you logon npm with command
 
-![](../.gitbook/assets/image%20%2828%29.png)
+```text
+npm login
+```
+
+then enter your username, password and email address and one-time password from authenticator. See this help about how to setup [two facts authentication](https://docs.npmjs.com/configuring-two-factor-authentication)
+
+![](../.gitbook/assets/image%20%2826%29.png)
+
+### 6.3 Double check with github
+
+After you publish, go to [bappo-open repo](https://github.com/bappogroup/bappo-open/commits/master) and you should see a commit group follow this pattern
+
+![](../.gitbook/assets/image%20%2832%29.png)
+
+
 
