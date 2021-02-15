@@ -131,5 +131,28 @@ cd ./bappo-open/packages/bappo-components
 npm publish
 ```
 
+## 5. Commit Version update
 
+Modify bappo-component Version
+
+![](../.gitbook/assets/image%20%2826%29.png)
+
+
+
+Publish new bappo-component 
+
+```bash
+cd ./bappo-open/packages/bappo-components
+
+#Make sure you are in the right folder before publish
+npm publish
+```
+
+Modify bappo-component Version in story book and yarn install
+
+![](../.gitbook/assets/image%20%2827%29.png)
+
+Commit changes in Step5 with name \`Storybook deploy\`
+
+![](../.gitbook/assets/image%20%2828%29.png)
 
