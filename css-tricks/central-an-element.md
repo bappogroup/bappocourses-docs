@@ -117,4 +117,10 @@ to
 Ref
 
 > [https://stackoverflow.com/questions/33454533/cant-scroll-to-top-of-flex-item-that-is-overflowing-container](https://stackoverflow.com/questions/33454533/cant-scroll-to-top-of-flex-item-that-is-overflowing-container)
+>
+> [https://moduscreate.com/blog/how-to-fix-overflow-issues-in-css-flex-layouts/](https://moduscreate.com/blog/how-to-fix-overflow-issues-in-css-flex-layouts/)
+>
+> [https://stackoverflow.com/questions/14962468/how-can-i-combine-flexbox-and-vertical-scroll-in-a-full-height-app](https://stackoverflow.com/questions/14962468/how-can-i-combine-flexbox-and-vertical-scroll-in-a-full-height-app)
+>
+> [https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/33856609\#33856609](https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/33856609#33856609)
 
