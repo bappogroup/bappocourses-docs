@@ -12,6 +12,8 @@
 * [Learning React for Bappo](learn-react-for-bappo.md)
 * [DB Query API in Bappo Coding](query-api.md)
 * [Forms in Bappo Coding](forms-in-bappo-coding.md)
+* [CSS tricks](css-tricks/README.md)
+  * [Central an element](css-tricks/central-an-element.md)
 
 ## View Editor
 
