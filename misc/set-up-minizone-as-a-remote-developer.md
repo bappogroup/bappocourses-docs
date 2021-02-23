@@ -27,9 +27,12 @@ Run `docker ps` and you should see these containers up and running:
 
 ![List of container names](../.gitbook/assets/image%20%2825%29.png)
 
+  9. Access your local bappo via https://local.bappo.com:8080
+
 ### Troubleshooting
 
 1. **Some container is not up** Check Logs from docker. Known reasons include not allocating enough cpu, memory or disk space to docker. 
+2. **API response with CORS error** This normally happens when the api server is down. Check the docker logs from api/database/redis container logs. You can first run `docker ps` , then e.g. `docker logs minizone_bappo-api_1` to see logs from a specific container.
 
 
 
